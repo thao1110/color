@@ -1,0 +1,11 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    include blocks/content
+    include blocks/register

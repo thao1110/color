@@ -1,0 +1,87 @@
+include ../mixins/all
+section.register
+    .wrap
+        span.pan1
+        span.pan2
+        .content
+          h2.title
+            |INSPIRER ET TRANSMETTRE
+          P
+            |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendumlaoreet.
+            br
+            |Proin gravida dolor sit amet lacus accumsan et viverra justo.
+          .input-register
+            .register-input
+              p
+                |Votre adresse mail
+            .click_button
+              span
+                |OK 
+          .social-block
+            ul
+              li 
+                a(href='#')
+                  span.icon-Twitter1
+                  br
+                  span.number
+                    |16k
+                  br  
+                  span.followers
+                    |Abonnés
+              li 
+                a(href='#')
+                  span.icon-Facebook1
+                  br
+                  span.number
+                    |86.5k
+                  br
+                  span.followers
+                    |Fans
+              li 
+                a(href='#')
+                  span.icon-Pinterest1
+                  br
+                  span.number
+                    |867.5k
+                  br
+                  span.followers
+                    |Abonnés
+              li 
+                a(href='#')
+                  span.icon-Instagram1
+                  br
+                  span.number
+                    |48.9k
+                  br  
+                  span.followers
+                    |Abonnés  
+    .instagram  
+      h2 
+        |Instagram
+      a(data-link, data-message="Click here") Login in
+      .destination-block
+        .list-destinations(data-slider, data-on-mobile="true", data-center-mode="true", data-center-padding="25px")
+          .item-destinations
+            +thumbnails({
+              thumbUrl: 'images/upload/slide1.png',
+              thumbAlt: 'Parc Astérix',
+            })
+          .item-destinations
+            +thumbnails({
+              thumbUrl: 'images/upload/slide1.png',
+              thumbAlt: 'Futuroscope',
+              
+            })
+          .item-destinations
+            +thumbnails({
+              thumbUrl: 'images/upload/slide1.png',
+              thumbAlt: 'Grévin Paris',
+              brand: {
+                logoUrl: 'images/upload/slide1.png',
+                logoAlt: 'Grévin Paris Logo'
+              },
+              desc: 'Un musée toujours réinventé et des formulespour profiter de la capitale.',
+              textLink: 'www.grevin-paris.com',
+              urlLink: 'www.grevin-paris.com'
+            })
+                            

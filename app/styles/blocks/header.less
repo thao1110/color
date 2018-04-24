@@ -1,0 +1,84 @@
+header {
+  font-size: 1.4rem;
+  padding: 0;
+  // border: 1px solid #ddd;
+  border-radius: 0;
+    .banner{
+      position: relative;
+      img{
+      width:100%;
+      border-radius: 0;
+      } 
+    }
+    .logo{
+      position: absolute;
+      top:-1%;
+      left:32%; 
+      img{
+        width:100%;
+      }
+    }
+    nav {
+      font-size: 1.4rem;
+      // margin: 5px 0;
+      padding: 1rem;
+      // border: 1px solid #ddd;
+      // border-radius: 3px;
+      // box-shadow: 0 1px 1px;
+      .clearfix();
+      .brand{
+        float: left;
+        display: block;
+        width:21%;
+        height: 33px;
+        text-align: center;
+        img {
+          // width:100%;
+        }
+      }
+      ul{
+        float: left;
+        width:63%;
+        .clearfix();
+        li {
+          float: left;
+          position: relative;
+          display: block;
+          margin-top:10px;
+          a {
+            padding: 4px;
+          }
+        }
+      }
+      .active a {
+        color: gray;
+      }
+      .search{
+        float: left;
+        width: 15%;
+        padding: 0 40px;
+        margin-top: 8px;
+        .clearfix();
+        .tooltip-block{
+          float: left;
+          width: 50%;
+        }
+        .from_search{
+          float:left;
+          // 
+          label{margin:0;}
+          select{
+            border: 0;
+            option{
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    
+}
+
+@media only screen and (min-width: @screen-sm-min) {
+
+}

@@ -1,0 +1,59 @@
+include ../mixins/all
+
+header
+  //- +link('Logo', 'index.html').logo
+  //- nav
+  //-   +nav([{title: 'Home', href: 'index.html'}, {title: 'Style Guide', href: 'template-style-guide.html'}, {title: 'Sitemap', href: 'sitemap.html'}])
+  .banner
+    +img('roller coaster', 'images/upload/banner.jpg')
+  .logo
+    +img('roller coaster', 'images/upload/logo_banner.png')
+  nav
+    .brand
+       +img('roller coaster', 'images/upload/nav_logo.png')
+    +nav([{title: 'NOS LOVINGS PARTNERS ', href: 'index.html'}, {title: ' NOUS SOMES  ', href: 'template-style-guide.html'}, {title: 'NOTRE UNIVERS', href: 'sitemap.html'}, {title: 'ALLEZ BOUGE-TOI', href: 'sitemap.html'}, {title: 'LA GAZETTE', href: 'sitemap.html'}, {title: 'MON COMPTE', href: 'sitemap.html'}])  
+    .search
+        .tooltip-block
+          +tooltip(
+            {
+              title: 'Overview',
+              content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+            }
+          ).left-position
+          //- br
+          //- br
+          //- br
+          //- br
+        .from_search
+          +select-custom(
+          {
+            id: 'select-activities',
+            textLabel: '',
+          },
+          {
+            'required': 'true',
+            'data-parsley-required': 'true',
+            'data-parsley-required-message':'Lorem ipsum dolor sit amet, consectetur adipisic',
+            'data-input-parsley': 'true',
+            'data-parsley-trigger': 'change',
+            'data-parsley-trigger-after-failure': 'change'
+          },
+          [
+            { text: 'FR', value: '', selected: true},
+            { text: ' EN', value: '1' },
+            { text: 'VN', value: '2' },
+            { text: 'AU', value: '3' },
+            { text: 'US', value: '4' },
+            { text: 'KH', value: '5' },
+            { text: 'AF', value: '6' },
+            { text: 'AR', value: '7' },
+            { text: 'BT', value: '8' },
+            { text: 'BR', value: '9' },
+            { text: 'EG', value: '10' },
+          ])(data-wrap-input)
+    //- ul.link-list
+    //-   li: button.md-trigger(data-modal data-id='modal-1') Simple content
+    //-   li: button.md-trigger(data-modal data-id='modal-2') Simple content (center - only desk)
+    //-   li: button.md-trigger(data-modal data-id='modal-3') Scrolling long content
+    //-   li: button.md-trigger(data-modal data-id='modal-4') Scrolling long content (inside - only desk)      
+      
